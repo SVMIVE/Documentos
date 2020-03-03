@@ -15,11 +15,6 @@
     font-style: normal;
 }
 
-p{
-margin-bottom: 0;
-padding-bottom: 0;
-}
-
 .pinline{
 display: inline;   
 }
@@ -99,9 +94,8 @@ body {
     font-family: 'times new roman';
 }
 
-b{
-    font-family: 'times new roman bold';
-}
+@media print{@page {size: landscape}}
+
 
 footer {
     color: #000000;
@@ -143,6 +137,7 @@ footer {
 .top_left {
     text-align: left;
     vertical-align: top;
+    padding-top: 20px;
 }
 
 .num {
@@ -179,7 +174,16 @@ footer {
     text-align: left;
     padding-bottom: 0px;
 }
-
+p{
+    margin-top: 0;
+    padding-top: 0;    
+    margin-bottom: 0;
+    padding-bottom: 0;
+    font-size: 11px;
+    }
+b{
+    font-family: 'times new roman bold';
+}
 table {
     width: 100%;
     border-collapse: collapse;
@@ -187,18 +191,25 @@ table {
     margin-bottom: 20px;
 }
 
+table thead{
+background-color: lightslategray;
+text-align: center;
+}
+
 table td {
     border: 0px solid black;
-    padding-bottom: 0px;
 }
 
 table th {
-    padding: 5px 0px;
     color: rgb(0, 0, 0);
     white-space: nowrap;
     font-weight: bold;
     border-bottom: 0px solid #C1CED9;
 
+}
+.border_top_bottom{
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
 }
 
 #left_50 {
@@ -221,4 +232,39 @@ table th {
 
 .margin_bottom_5 {
     margin-bottom: 5px;
+}
+
+.top_left {
+    text-align: left;
+    vertical-align: top;
+}
+.top_left {
+    vertical-align: top;
+}
+.right_text {
+    text-align: right;
+}
+
+.left_text {
+    text-align: left;
+}
+#logo {
+    float: left;
+    margin-top: 8px;
+}
+
+#logo img {
+    height: 100px;
+}
+
+#company {
+    float: left;
+    text-align: center;
+    width: 91%;
+}
+h4{
+    margin-top: 0;
+    padding-top: 0;  
+    margin-bottom: 0;
+    padding-bottom: 0;    
 }

@@ -15,10 +15,8 @@
     font-style: normal;
 }
 
-p{
-margin-bottom: 0;
-padding-bottom: 0;
-}
+
+
 
 .pinline{
 display: inline;   
@@ -91,7 +89,10 @@ label {
 
 body {
     position: relative;
-    width: 215.9mm;
+    /*
+    width: 279.4mm;
+    height: 215.9mm;
+    */
     margin: 0 auto;
     color: #000000;
     background: #FFFFFF;
@@ -99,9 +100,6 @@ body {
     font-family: 'times new roman';
 }
 
-b{
-    font-family: 'times new roman bold';
-}
 
 footer {
     color: #000000;
@@ -110,6 +108,8 @@ footer {
     bottom: 0;
     height: 80px;
 }
+
+@media print{@page {size: landscape}}
 
 .header_field_1 {
     width: 31%;
@@ -143,6 +143,7 @@ footer {
 .top_left {
     text-align: left;
     vertical-align: top;
+    padding-top: 20px;
 }
 
 .num {
@@ -179,26 +180,44 @@ footer {
     text-align: left;
     padding-bottom: 0px;
 }
-
+p{
+    margin-top: 0;
+    padding-top: 0;    
+    margin-bottom: 0;
+    padding-bottom: 0;
+    font-size: 11px;
+    }
+b{
+    font-family: 'times new roman bold';
+}
 table {
     width: 100%;
     border-collapse: collapse;
     border-spacing: 0;
     margin-bottom: 20px;
 }
+.withborders td{
+    border: 1px solid grey;
+}
+
+table thead{
+text-align: center;
+}
 
 table td {
     border: 0px solid black;
-    padding-bottom: 0px;
 }
 
 table th {
-    padding: 5px 0px;
     color: rgb(0, 0, 0);
     white-space: nowrap;
     font-weight: bold;
     border-bottom: 0px solid #C1CED9;
 
+}
+.border_top_bottom{
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
 }
 
 #left_50 {
@@ -221,4 +240,42 @@ table th {
 
 .margin_bottom_5 {
     margin-bottom: 5px;
+}
+
+.top_left {
+    text-align: left;
+    vertical-align: top;
+}
+.top_left {
+    vertical-align: top;
+}
+.right_text {
+    text-align: right;
+}
+
+.left_text {
+    text-align: left;
+}
+.center_text {
+    text-align: center;
+}
+#logo {
+    float: left;
+    margin-top: 8px;
+}
+
+#logo img {
+    height: 100px;
+}
+
+#company {
+    float: left;
+    text-align: center;
+    width: 91%;
+}
+h4{
+    margin-top: 0;
+    padding-top: 0;  
+    margin-bottom: 0;
+    padding-bottom: 0;    
 }
